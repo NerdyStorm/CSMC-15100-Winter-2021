@@ -1,0 +1,13 @@
+#lang typed/racket
+
+require "../include/cs151-core.rkt"
+
+
+(define-struct CircleWorld
+  ([background-color : Image-Color]
+   [initial-color    : Image-Color]
+   [change-to-color  : Image-Color]
+   [num-circles : Integer]
+   [radius  : Integer]
+   [padding : Integer]
+   [clicked-on? : (Listof Boolean)]))
